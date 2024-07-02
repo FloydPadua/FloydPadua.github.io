@@ -99,4 +99,4 @@ qty6.addEventListener("keyup", addOrder);
 
 cash.addEventListener("keyup", calculateChange);
 
-document.getElementById('BuyNow').addEventListener('click', buyNow);
+document.getElementById('buyNow').addEventListener('click', buyNow);

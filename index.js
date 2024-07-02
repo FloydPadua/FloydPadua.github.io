@@ -36,6 +36,7 @@ function addOrder(){
     }
     if (parseFloat(qty2.value) > 0){
         var order= qty2.value.toString() + ' pc/s x '+ price2.textContent + '------'+ product2.textContent + '------ Php' + (parseFloat(qty2.value)*parseFloat(price2.textContent)) + '\n'
+
         carts.textContent += order
         var qty = parseFloat(qty2.value);
         var price = parseFloat(price2.textContent);
@@ -50,7 +51,6 @@ function addOrder(){
     }
     if (parseFloat(qty4.value) > 0){
         var order= qty4.value.toString() + ' pc/s x '+ price4.textContent + '------'+ product4.textContent + '------ Php' + (parseFloat(qty4.value)*parseFloat(price4.textContent)) + '\n'
-    
         carts.textContent += order
         var qty = parseFloat(qty4.value);
         var price = parseFloat(price4.textContent);
@@ -85,13 +85,10 @@ function calculateChange() {
 }
 
 function buyNow(){
-    if (cashTendered >= totalPrice && totalPrice > 0) {
-			alert('Thank you for purchase');
-        else if (totalPrice == 0) {
-			alert("Please add items to your order.");
-		} else {
-			alert("Insufficient Cash.");
-		}
+	if ( totalPrice >= cashTendered );
+    alert('Thank you for purchase!');
+	else
+	alert('Kulang Bayad!');
 
 
 }

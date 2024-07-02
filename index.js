@@ -85,7 +85,13 @@ function calculateChange() {
 }
 
 function buyNow(){
-    alert('Thank you for your purchase');
+    if (cashAmount >= totalAmount && totalAmount > 0) {
+			alert("Order Successful!\n\n" + "Products Purchased:\n" + carts.textContent + "\nHAVE A GOOD DAY!");
+        else if (totalAmount == 0) {
+			alert("Please add items to your order.");
+		} else {
+			alert("Insufficient Cash.");
+		}
 
 
 }

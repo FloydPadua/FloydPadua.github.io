@@ -132,3 +132,34 @@ function calculateChange() {
     }
 }
 
+function finishOrder() {
+    var totalAmount = parseFloat(total.value.replace("Php ", ""));
+    var cashAmount = parseFloat(cash.value);
+
+    if (cashAmount >= totalAmount && totalAmount > 0) {
+        alert("Order Successful!\n\n" + "Products Purchased:\n" + carts.textContent + "\nHAVE A GOOD DAY!");
+        carts.textContent = "";
+        total.value = "";
+        cash.value = "";
+        change.value = "";
+        qty1.value = "";
+        qty2.value = "";
+        qty3.value = "";
+        qty4.value = "";
+        qty5.value = "";
+        qty6.value = "";
+    } else if (totalAmount == 0) {
+        alert("Please add items to your order.");
+    } else {
+        alert("Insufficient Cash.");
+    }
+}
+
+qty1.addEventListener("keyup", addOrder);
+qty2.addEventListener("keyup", addOrder);
+qty3.addEventListener("keyup", addOrder);
+qty4.addEventListener("keyup", addOrder);
+qty5.addEventListener("keyup", addOrder);
+qty6.addEventListener("keyup", addOrder);
+cash.addEventListener("keyup", calculateChange);
+

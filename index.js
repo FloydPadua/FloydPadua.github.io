@@ -85,10 +85,11 @@ function calculateChange() {
 }
 
 function buyNow(){
-	if ( totalPrice >= cashTendered );
+	if ( totalPrice >= cashTendered ){
     alert('Thank you for purchase!');
-	else
-	alert('Kulang Bayad!');
+	} else {
+		alert('Kulang Bayad!');
+	}
 
 
 }

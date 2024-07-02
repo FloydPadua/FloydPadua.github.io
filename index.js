@@ -29,7 +29,6 @@ function addOrder(){
 
     if (parseFloat(qty1.value) > 0){
         var order = qty1.value.toString() + ' pc/s x '+ price1.textContent + '------'+ product1.textContent + '------ Php' + (parseFloat(qty1.value)*parseFloat(price1.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
         carts.textContent += order
         var qty = parseFloat(qty1.value);
         var price = parseFloat(price1.textContent);
@@ -37,7 +36,6 @@ function addOrder(){
     }
     if (parseFloat(qty2.value) > 0){
         var order= qty2.value.toString() + ' pc/s x '+ price2.textContent + '------'+ product2.textContent + '------ Php' + (parseFloat(qty2.value)*parseFloat(price2.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
         carts.textContent += order
         var qty = parseFloat(qty2.value);
         var price = parseFloat(price2.textContent);
@@ -45,7 +43,6 @@ function addOrder(){
     }
     if (parseFloat(qty3.value) > 0){
         var order = qty3.value.toString() + ' pc/s x '+ price3.textContent + '------'+ product3.textContent + '------ Php' + (parseFloat(qty3.value)*parseFloat(price3.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
         carts.textContent += order
         var qty = parseFloat(qty3.value);
         var price = parseFloat(price3.textContent);
@@ -53,7 +50,7 @@ function addOrder(){
     }
     if (parseFloat(qty4.value) > 0){
         var order= qty4.value.toString() + ' pc/s x '+ price4.textContent + '------'+ product4.textContent + '------ Php' + (parseFloat(qty4.value)*parseFloat(price4.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
+    
         carts.textContent += order
         var qty = parseFloat(qty4.value);
         var price = parseFloat(price4.textContent);
@@ -61,7 +58,6 @@ function addOrder(){
     }
     if (parseFloat(qty5.value) > 0){
         var order = qty5.value.toString() + ' pc/s x '+ price5.textContent + '------'+ product5.textContent + '------ Php' + (parseFloat(qty5.value)*parseFloat(price5.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
         carts.textContent += order
         var qty = parseFloat(qty5.value);
         var price = parseFloat(price5.textContent);
@@ -69,7 +65,6 @@ function addOrder(){
     }
     if (parseFloat(qty6.value) > 0){
         var order= qty6.value.toString() + ' pc/s x '+ price6.textContent + '------'+ product6.textContent + '------ Php' + (parseFloat(qty6.value)*parseFloat(price6.textContent)) + '\n'
-        //carts.textContent += carts.value.toString() + "\n";
         carts.textContent += order
         var qty = parseFloat(qty6.value);
         var price = parseFloat(price6.textContent);
